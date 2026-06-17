@@ -1,0 +1,9 @@
+2026-06-15T10:01:00Z INFO service=payment-api deployment_started version_from=v2.3.6 version_to=v2.3.7
+2026-06-15T10:05:00Z INFO service=payment-api deployment_completed version=v2.3.7 DB_POOL_MAX_CONNECTIONS=20
+2026-06-15T10:08:00Z WARN service=payment-api latency_p95_ms=1180 threshold=800
+2026-06-15T10:09:00Z ERROR service=payment-api DBConnectionTimeout endpoint=/api/v1/checkout/pay timeout_ms=3000 pool_used_pct=95 db=payments
+2026-06-15T10:10:00Z ERROR service=payment-api status=500 error=DBConnectionTimeout customer_impact=true
+2026-06-15T10:11:00Z CRITICAL service=payment-api http_5xx_rate_pct=18.4 threshold=5
+2026-06-15T10:12:00Z WARN service=payment-api DB connection pool saturation pool_used_pct=98 max_connections=20 active_connections=20
+2026-06-15T10:13:00Z INFO service=network packet_loss_pct=0.02 dns_lookup_p95_ms=11 status=healthy
+2026-06-15T10:14:00Z INFO service=compute cpu_util_pct=54 memory_util_pct=65 node_pressure=false
